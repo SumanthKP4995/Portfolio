@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(42, 40, 40, 0.968);
+    header{
+        nav{
+            position: fixed;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            .nav-div{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .pages{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 40px;
+                    li{
+                        /* color: white;  this is not working here i have to give it in the "a" tag*/
+                        font-size: 24px;
+                        list-style: none;
+                        font-weight: bold;
+                        a{
+                            color:white;
+                            text-decoration: none;
+                        }
+                    }
+                    #darkmode{
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 2px solid red;
+                            border-radius: 50%;
+                            background-color: black;
+                        }
+                        img{
+                            padding: 5px;
+                            border-radius: 50%;
+                            width: 100%;
+                            height:100% ;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    main{
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .main-container{
+            width: 80%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            .info{
+                /* border: 2px solid red; */
+                width: 80%;
+                height: 80%;
+                color: white;
+                
+                h2{
+                    text-transform: capitalize;
+                    font-size: 35px;
+                    /* line-height: 10px; */
+                }
+                h1{
+                    text-transform: capitalize;
+                    font-size: 50px;
+                    color: orangered;
+                }
+                P{
+                    padding-top: 15px;
+                    line-height: 30px;
+                    font-size: 24px;
+                    font-style: italic;
+                    font-family:cursive;
+                    text-align: justify;
+                }
+            }
+            .photo{
+                /* border: 2px solid red; */
+                padding-top: 50px;
+                width: 60%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 100%;
+                    width: 80%;
+                    border-radius: 50%;
+                }
+            }
+            .resume{
+                padding-top: 20px;
+                display: flex;
+                gap: 20px;
+                a{
+                    background-color: rgb(75, 75, 229);
+                    border-radius: 20px;
+                    color: rgb(21, 19, 19);
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+            }
+            .icons{
+                padding-top: 20px;
+                /* padding-left: 5px; */
+                display: flex;
+                gap: 30px;
+                i{
+                    font-size: 35px;
+                }
+                #linkedin{
+                    color: blue;
+                }
+                #insta{
+                    color: rgb(197, 77, 97);
+                }
+                #git{
+                    color: black;
+                }
+            }
+        }
+
+    }
+    #about{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .navspace{
+            height: 10%;
+            width: 100%;
+        }
+        .container1{
+            height: 80%;
+            width: 80%;
+            /* border: 2px solid red; */
+            h1{
+                padding-top: 30px;
+                font-size: 34px;
+                font-weight: bold;
+                color:gold;
+            }
+            p{
+                padding-top: 20px;
+                font-size: 24px;
+                text-align: justify;
+                font-style: italic;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color: white;
+            }
+        }
+    }
+    #education{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .navspace{
+            height: 10%;
+            width: 100%;
+        }
+        .conatainer2{
+            height: 80%;
+            width: 80%;
+            /* border: 2px solid red; */
+            h1{
+                padding-top: 30px;
+                font-size: 34px;
+                font-weight: bold;
+                color:gold;
+            }
+            dl{
+                padding-top: 50px;
+                dt{
+                    color:rgb(232, 72, 28);
+                    font-size: 24px;
+                    padding-left: 5%
+                }
+                dd{
+                    color: white;
+                    font-size: 24px;
+                    padding-left: 10%;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    #skills{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .navspace{
+            height: 10%;
+            width: 100%;
+        }
+        .heading{
+            width: 100%;
+            padding-left: 20%;
+            h1{
+                padding-top: 30px;
+                font-size: 34px;
+                font-weight: bold;
+                color:gold;
+                align-self: flex-start;
+            }
+        }
+        .container3{
+            height: 60%;
+            width: 90%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: nowrap;
+            #head{
+                width: 100%;
+            }
+            .cards{
+                width: 45%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 2px solid white;
+                border-radius: 20px;
+                background-color: beige;
+                flex-wrap: wrap;
+                i{
+                    font-size: 200px;
+                }
+                h2{
+                    padding-top: 25px;
+                    font-size: 30px;
+                    text-transform: capitalize;
+                    color:rgb(1, 0, 0);
+                }
+                #html{
+                    color: rgb(215, 29, 29);
+                }
+                #js{
+                    color: yellow;
+                }
+                #css{
+                    color: rgb(101, 101, 255);
+                }
+                #java{
+                    color: coral;
+                }
+                #sql{
+                    color: aqua;
+                }
+            }
+        }
+    }
+    #certifications{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .navspace{
+            height: 10%;
+            width: 100%;
+        }
+        .container4{
+            width: 80%;
+            height: 90%;
+            h1{
+                padding-top: 30px;
+                font-size: 34px;
+                font-weight: bold;
+                color:gold;
+                text-transform: capitalize;
+            }
+            .certi1{
+                width: 80%;
+                height: 80%;
+                padding-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                img{
+                    height: 100%;
+                }
+                .button{
+                    background-color: rgb(92, 83, 212);
+                    padding: 15px;
+                    font-size: 24px;
+                    border-radius: 20px;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 100vw;
+        height: 20vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        gap: 60px;
+        /* border-top-left-radius: 25px;
+        border-top-right-radius: 25px; */
+    }
+}
